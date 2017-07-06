@@ -1,1 +1,63 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function bigtab (ID) {
+      	document.getElementById(ID).style.fontSize = "30px";
+      }
+      function normaltab (ID) {
+        document.getElementById(ID).style.fontSize = "25px";
+      }
+    </script>
+    <style>
+      #MyPhoto {
+          float:right; 
+          width: 25%;
+      }
+      #Text {
+        float:left;
+        width:75%;
+        text-align: center;
+      }
+      .Tabs {
+        float:left; 
+     	  width: 25%;
+        background-color:rgb(187, 30, 255);
+        font-size:25px;
+        text-align: center;
+      }
+      #Welcometab, #Aboutmetab {
+        background-color: rgb(252, 252, 252);
+      }
+            body {
+     background-color: hsl(315, 100%, 85%); 
+      }
+      * {
+      font-family: Garamond, serif;
+      }
+      h1 {
+    background-color: rgb(51, 8, 124);
+    font-size: 70px;
+    text-align: center;
+         }
+      </style>
+    </head>
+  <title> Contact Me! </title>
+<body>
+  <h1> <font color="white"> <u> Caity Berry </u> </font> </h1>
+  <div id="Menu"> 
+    <div id="Welcometab" onmouseover="bigtab('Welcometab')" onmouseout="normaltab('Welcometab')" class="Tabs">
+      <p>Welcome</p>
+    </div> 
+    <div id="Projectstab" onmouseover="bigtab('Projectstab')" onmouseout="normaltab('Projectstab')" class="Tabs"> 
+      <p>Projects</p>
+    </div>
+    <div id="Aboutmetab" onmouseover="bigtab('Aboutmetab')" onmouseout="normaltab('Aboutmetab')" class="Tabs">
+      <p> About me </p>
+    </div> 
+    <div id="Contacttab" onmouseover="bigtab('Contacttab')" onmouseout="normaltab('Contacttab')" class="Tabs">
+    <p> Contact </p>
+    </div> 
+  </div>
+</body>
+  </html>
