@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      function bigtab (ID) {
+      	document.getElementById(ID).style.fontSize = "30px";
+      }
+      function normaltab (ID) {
+        document.getElementById(ID).style.fontSize = "25px";
+      }
+    </script>
     <style>
       #MyPhoto {
           float:right; 
@@ -38,16 +46,16 @@
 <body>
   <h1> <font color="white"> <u> Caity Berry </u> </font> </h1>
   <div id="Menu"> 
-    <div id="Welcometab" class="Tabs">
+    <div id="Welcometab" onmouseover="bigtab('Welcometab')" onmouseout="normaltab('Welcometab')" class="Tabs">
       <p>Welcome</p>
     </div> 
-    <div id="Projectstab" class="Tabs"> 
+    <div id="Projectstab" onmouseover="bigtab('Projectstab')" onmouseout="normaltab('Projectstab')" class="Tabs"> 
       <p>Projects</p>
     </div>
-    <div id="Aboutmetab" class="Tabs">
+    <div id="Aboutmetab" onmouseover="bigtab('Aboutmetab')" onmouseout="normaltab('Aboutmetab')" class="Tabs">
       <p> About me </p>
     </div> 
-    <div id="Contacttab" class="Tabs">
+    <div id="Contacttab" onmouseover="bigtab('Contacttab')" onmouseout="normaltab('Contacttab')" class="Tabs">
     <p> Contact </p>
     </div> 
   </div>
