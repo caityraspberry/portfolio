@@ -9,23 +9,12 @@
         document.getElementById(ID).style.fontSize = "25px";
       }
     </script>
-    <style>
-    a:link {
-    color: white;
-    text-decoration: none;
-}
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-a:hover {
-    color: white;
-    text-decoration: none;
-}
-a:active {
-    color: white;
-    text-decoration: none;
-}
+ <style>
+       #MainTitle {
+    background-color: #591E23;
+    font-size: 50px;
+    text-align: center;
+         }      
       .Tabs {
         float:left; 
      	  width: 25%;
@@ -34,28 +23,41 @@ a:active {
         font-size:25px;
         text-align: center;
       }
-      #Welcometab, #Aboutmetab {
+          a:link {
+          color: white;
+          text-decoration: none;
+            }
+      a:visited {
+          color: white;
+          text-decoration: none;
+           }
+      a:hover {
+          color: white;
+          text-decoration: none;
+          }
+      a:active {
+          color: white;
+          text-decoration: none;
+          }
+            #Welcometab, #Aboutmetab {
         background-color: #D94E67;
       }
       #Projectstab, #Contacttab {
         background-color: #A68572;
       }
-            body {
-     background-color: #F2D86D; 
+      body {
+        background-color: #F2D86D; 
       }
       * {
-      font-family: Garamond, serif;
+        font-family: Garamond, serif;
       }
-      h1 {
-    background-color: #591E23;
-    font-size: 70px;
-    text-align: center;
-         }
       </style>
     </head>
   <title> Welcome! </title>
 <body>
-  <h1> <font color="white"> <u> Caity Berry </u> </font>  </h1>
+  <div id="MainTitle">
+    <h1> <font color="white"> <u> Caity Berry </u> </font>  </h1>
+  </div>
   <div id="Menu"> 
     <div id="Welcometab" onmouseover="bigtab('Welcometab')" onmouseout="normaltab('Welcometab')" class="Tabs">
       <p><a href="https://caityraspberry.github.io/portfolio/welcome.html">Welcome</a> 
