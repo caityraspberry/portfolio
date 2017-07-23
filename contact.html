@@ -16,18 +16,19 @@
     background-color: #591E23;
     font-size: 50px;
     text-align: center;
-         }      
+         }
       .Tabs {
-        float:left; 
+        float:left;
      	  width: 25%;
         height: 80px;
         background-color:rgb(187, 30, 255);
         font-size:25px;
         text-align: center;
         transition: all 0.2s ease-out;
+        margin-bottom: 30px;
       }
       #MyName {
-          padding: 0px 0px 10px 0px;          
+          padding: 0px 0px 10px 0px;
           margin: 0px;
       }
     a:link {
@@ -53,7 +54,7 @@ a:active {
         background-color: #A68572;
       }
       body {
-        background-color: #F2D86D; 
+        background-color: #F2D86D;
       }
       p {
         font-family: Garamond, serif;
@@ -62,6 +63,43 @@ a:active {
       h1 {
         font-family: 'Satisfy', cursive;
       }
+
+      /*This is the place where you write stuff*/
+      input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/*This is the sumbit button*/
+input[type=submit] {
+    background-color: #591E23;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+label {
+  font-family: Garamond, serif;
+  line-height: 150%;
+}
+input[type=submit]:hover {
+    background-color: #A68572;
+}
+
+#Form {
+    border-radius: 5px;
+    background-color: #F2D86D;
+    padding: 20px;
+    float: left;
+    width: 80%;
+}
       </style>
     </head>
   <title> Contact Tab </title>
@@ -85,5 +123,24 @@ a:active {
  <p><a href="https://caityraspberry.github.io/portfolio/contact.html">Contact</a>
 </p>    </div>
   </div>
+
+  <div id="Form">
+    <form action="/action_page.php">
+      <label for="fname"> <font color="#6b7482"> First Name </font></label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname"> <font color="#6b7482"> Last Name </font ></label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email"> <font color="#6b7482"> Your email </font ></label>
+      <input type="text" id="email" name="email" placeholder="Your email...">
+
+      <label for="subject"> <font color="#6b7482"> Subject </font></label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
 </body>
   </html>
