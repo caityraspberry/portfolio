@@ -103,11 +103,6 @@ input[type=submit]:hover {
       .icons {
       display:inline-block;
       }
-      #Linkedin:hover {
-          content: img('linkedinColor.jpg');
-    height: 150px;
-    width: 150px;
-      }
       </style>
     </head>
   <title> Contact Tab </title>
@@ -151,8 +146,12 @@ input[type=submit]:hover {
   </div>
 <div id="Media">
  <a href="https://www.linkedin.com/in/caity-berry-432664139" target="_blank"> <div class="icons">
-       <img src= "linkedin.jpg" style="width:150px;height:150px" id="Linkedin">
+    <img src='linkedin.jpg' style="width:150px;height:150px" onmouseover="this.src='linkedinColor.jpg';" onmouseout="this.src='linkedin.jpg';" />
+<!--        <img src= "linkedin.jpg" style="width:150px;height:150px" id="Linkedin"> -->
    </div></a>
+  
+  <img src='linkedin.jpg' style="width:150px;height:150px" onmouseover="this.src='linkedinColor.jpg';" onmouseout="this.src='linkedin.jpg';" />
+
  <a href="https://www.facebook.com/caityritaberry" target="_blank"> <div class="icons">
        <img src= "facebook.jpg" style="width:150px;height:150px"></div> </a>
    <a href="https://www.instagram.com/caityraspberry/?hl=en" target="_blank"> <div class="icons">
