@@ -1,3 +1,5 @@
+<html>
+    <body>
 <?php
 $field_name = $_POST['name'];
 $field_email = $_POST['email'];
@@ -31,3 +33,5 @@ else { ?>
 }
 
 ?>
+    </body>
+</html>
