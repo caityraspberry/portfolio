@@ -1,6 +1,6 @@
 <html>
     <body>
-<?php
+<!-- <?php
 $field_name = $_POST['name'];
 $field_email = $_POST['email'];
 $field_message = $_POST['subject'];
@@ -32,6 +32,6 @@ else { ?>
 <?php
 }
 
-?>
+?> -->
     </body>
 </html>
