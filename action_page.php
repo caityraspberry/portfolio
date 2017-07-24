@@ -80,6 +80,7 @@ a:active {
  <p><a href="https://caityraspberry.github.io/portfolio/contact.html">Contact</a>
 </p>    </div>
   </div>
-  <>
+Thank you <?php echo $_POST["firstname"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
 </body>
   </html>
