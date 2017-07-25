@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,7 +57,7 @@ a:active {
         background-color: #E7BBE3;
       }
       p {
-        font-family: Garamond, serif;        
+        font-family: Garamond, serif;
         line-height: 150%;
       }
        h1 {
@@ -92,18 +91,34 @@ a:active {
         padding-left: 20px;
         text-align:center;
       }
-      .modal-content {
-        font-family: Garamond, serif;        
+      .modal-title {
+        font-size: 40px;
+        font-family: Garamond, serif;
         line-height: 150%;
       }
-      .modal-header {
-        font-size: 30px;
+      .modal-body {
+      font-size: 20px;
+      font-family: Garamond, serif;
+      line-height: 150%;
       }
       .modal-footer {
-      font-size: 17px;
+        font-family: Garamond, serif;
+        line-height: 150%;
       }
-      .modal-boday {
-      font-size: 17px;
+
+      button[class=CloseButton]:hover {
+          background-color: #C58882;
+      }
+      .CloseButton {
+        background-color: #DF928E;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width:100%;
+        height: 75px;
+        font-size: 30px;
       }
       </style>
     </head>
@@ -139,7 +154,7 @@ a:active {
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -150,10 +165,10 @@ a:active {
           <p>Lets hope this works!</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="CloseButton" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
   </div>
   </div>
@@ -162,130 +177,130 @@ a:active {
     <!-- Trigger the modal with a button -->
 <button><img src= "shapes1C.jpg" style="width:300px;height:300px" data-toggle="modal" data-target="#myModal"> </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Lets hope this works!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lets hope this works!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="CloseButton" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   </div>
   <div class="Images">
 <!--     <img src= "paddleballC.jpg" style="width:300px;height:300px"> -->
     <!-- Trigger the modal with a button -->
 <button><img src= "paddleballC.jpg" style="width:300px;height:300px" data-toggle="modal" data-target="#myModal"> </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Lets hope this works!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lets hope this works!</p>
+        </div>
+        <div class="modal-footer">
+          <button id="CloseButton" type="button" class="CloseButton" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   </div>
   <div class="Images">
 <!--      <img src= "shapes2C.jpg" style="width:300px;height:300px"> -->
     <!-- Trigger the modal with a button -->
 <button><img src= "shapes2C.jpg" style="width:300px;height:300px" data-toggle="modal" data-target="#myModal"> </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Lets hope this works!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lets hope this works!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="CloseButton" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   </div>
   <div class="Images">
 <!--      <img src= "shapes3C.jpg" style="width:300px;height:300px"> -->
     <!-- Trigger the modal with a button -->
 <button><img src= "shapes3C.jpg" style="width:300px;height:300px" data-toggle="modal" data-target="#myModal"> </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Lets hope this works!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lets hope this works!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="CloseButton" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   </div>
     <div class="Images">
 <!--      <img src= "GameC.jpg" style="width:300px;height:300px"> -->
       <!-- Trigger the modal with a button -->
 <button><img src= "GameC.jpg" style="width:300px;height:300px" data-toggle="modal" data-target="#myModal"> </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Lets hope this works!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lets hope this works!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="CloseButton" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   </div>
 </div>
 </body>
