@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-          <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta name="description" content="contact form example">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Style The Contact Form How Ever You Prefer -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+    <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     <script>
       function bigtab (ID) {
       	document.getElementById(ID).style.fontSize = "30px";
@@ -18,153 +23,181 @@
       }
     </script>
     <style>
-       #MainTitle {
-    background-color: #1D201F;
-    font-size: 50px;
-    text-align: center;
-         }
-      .Tabs {
-        float:left;
-     	  width: 25%;
-        height: 80px;
-        background-color:rgb(187, 30, 255);
-        font-size:25px;
-        text-align: center;
-        transition: all 0.2s ease-out;
-        margin-bottom: 30px;
-        background-color: #1D201F;
+    #MainTitle {
+ background-color: #1D201F;
+ font-size: 50px;
+ text-align: center;
       }
-      #MyName {
-          padding: 30px 0px 30px 0px;
-          margin: 0px;
-          font-size: 140px;
-      }
-    a:link {
-    color: white;
-    text-decoration: none;
-      }
+   .Tabs {
+     float:left;
+     width: 25%;
+     height: 80px;
+     background-color:rgb(187, 30, 255);
+     font-size:25px;
+     text-align: center;
+     transition: all 0.2s ease-out;
+     margin-bottom: 30px;
+     background-color: #1D201F;
+   }
+   #MyName {
+       padding: 30px 0px 30px 0px;
+       margin: 0px;
+       font-size: 140px;
+   }
+ a:link {
+ color: white;
+ text-decoration: none;
+   }
 a:visited {
-    color: white;
-    text-decoration: none;
-     }
+ color: white;
+ text-decoration: none;
+  }
 a:hover {
-    color: white;
-    text-decoration: none;
-    }
+ color: white;
+ text-decoration: none;
+ }
 a:active {
-    color: white;
-    text-decoration: none;
-    }
-      body {
-        background-color: #E7BBE3;
-      }
-      p {
-        font-family: Garamond, serif;
-        line-height: 150%;
-      }
-      h1 {
-        font-family: 'Satisfy', cursive;
-      }
-      /*This is the place where you write stuff*/
-      input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-bottom: 2px solid #DF928E;
-    box-sizing: border-box;
-    margin-bottom: 16px;
-    resize: vertical;
-    background-color: white;
+ color: white;
+ text-decoration: none;
+ }
+   body {
+     background-color: #E7BBE3;
+   }
+   p {
+     font-family: Garamond, serif;
+     line-height: 150%;
+   }
+   h1 {
+     font-family: 'Satisfy', cursive;
+   }
+   /*This is the place where you write stuff*/
+   input[type=text], select, textarea {
+ width: 100%;
+ padding: 12px;
+ border: none;
+ border-bottom: 2px solid #DF928E;
+ box-sizing: border-box;
+ margin-bottom: 16px;
+ resize: vertical;
+ background-color: white;
 }
 /*This is the sumbit button*/
 input[type=submit] {
-    background-color: #DF928E;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width:100%;
-    height: 100px;
-    font-size: 30px;
+ background-color: #DF928E;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ width:100%;
+ height: 100px;
+ font-size: 30px;
 }
 label {
- font-family: Garamond, serif;
-  line-height: 150%;
-  font-size: 20px;
+font-family: Garamond, serif;
+line-height: 150%;
+font-size: 20px;
 }
 input[type=submit]:hover {
-    background-color: #C58882;
+ background-color: #C58882;
 }
 #Form {
-    border-radius: 5px;
-    background-color: #E7BBE3;
-    padding: 20px;
-    float: left;
-    width: 80%;
+ border-radius: 5px;
+ background-color: #E7BBE3;
+ padding: 20px;
+ float: left;
+ width: 80%;
 }
-    #Media {
-      text-align:center;
-      }
-      .icons {
-      display:inline-block;
-      }
-      </style>
-    </head>
-  <title> Contact Tab</title>
-  <link rel='shortcut icon' type='image/x-icon' href='icon.png' />
+ #Media {
+   text-align:center;
+   }
+   .icons {
+   display:inline-block;
+   }
+   #thankyou_message {
+     width: 100%;
+     text-align: center;
+   }
+   #Message {
+     font-family: Garamond, serif;
+     line-height: 150%;
+     font-size: 40px;
+   }
+   </style>
+</head>
+<title>Contact Tab!</title>
+<link rel='shortcut icon' type='image/x-icon' href='icon.png' />
+
 <body>
   <div id="MainTitle">
-  <h1 id="MyName"> <font color="white">  Caity Berry  </font>  </h1>
-  </div>
-  <div id="Menu">
-    <div id="Welcometab" onmouseover="bigtab('Welcometab')" onmouseout="normaltab('Welcometab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/welcome.html';" style="cursor:pointer;">
-      <p><a href="https://caityraspberry.github.io/portfolio/welcome.html">Welcome</a>
-</p>
+    <h1 id="MyName"> <font color="white">  Caity Berry  </font>  </h1>
     </div>
-    <div id="Projectstab" onmouseover="bigtab('Projectstab')" onmouseout="normaltab('Projectstab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/projects.html';" style="cursor:pointer;">
- <p><a href="https://caityraspberry.github.io/portfolio/projects.html">Projects</a>
-</p>    </div>
-    <div id="Aboutmetab" onmouseover="bigtab('Aboutmetab')" onmouseout="normaltab('Aboutmetab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/aboutme.html';" style="cursor:pointer;">
- <p><a href="https://caityraspberry.github.io/portfolio/aboutme.html" >About Me</a>
-</p>    </div>
-    <div id="Contacttab" onmouseover="bigtab('Contacttab')" onmouseout="normaltab('Contacttab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/contact.html';" style="cursor:pointer;">
- <p><a href="https://caityraspberry.github.io/portfolio/contact.html">Contact</a>
-</p>    </div>
+    <div id="Menu">
+      <div id="Welcometab" onmouseover="bigtab('Welcometab')" onmouseout="normaltab('Welcometab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/welcome.html';" style="cursor:pointer;">
+        <p><a href="https://caityraspberry.github.io/portfolio/welcome.html">Welcome</a>
+  </p>
+      </div>
+      <div id="Projectstab" onmouseover="bigtab('Projectstab')" onmouseout="normaltab('Projectstab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/projects.html';" style="cursor:pointer;">
+   <p><a href="https://caityraspberry.github.io/portfolio/projects.html">Projects</a>
+  </p>    </div>
+      <div id="Aboutmetab" onmouseover="bigtab('Aboutmetab')" onmouseout="normaltab('Aboutmetab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/aboutme.html';" style="cursor:pointer;">
+   <p><a href="https://caityraspberry.github.io/portfolio/aboutme.html" >About Me</a>
+  </p>    </div>
+      <div id="Contacttab" onmouseover="bigtab('Contacttab')" onmouseout="normaltab('Contacttab')" class="Tabs" onclick="location.href='https://caityraspberry.github.io/portfolio/contact.html';" style="cursor:pointer;">
+   <p><a href="https://caityraspberry.github.io/portfolio/contact.html">Contact</a>
+  </p>    </div>
+    </div>
+
+    <div id="Form">
+
+     <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzM4HAQtMIg4C9g8cS2iGpOINy1DlTuRSM1zvYdY4sScMb9dJ-H/exec">
+        <label for="name"> <font color="#565f6d"> Name: </font></label><br>
+        <input type="text" id="name" name="name" style="height:50px" required="required">
+<br>
+        <label for="email"> <font color="#565f6d"> Your email: </font ></label> <br>
+        <input type="text" id="email" name="email"  style="height:50px" required="required">
+<br>
+        <label for="subject"> <font color="#565f6d"> Your message: </font></label>
+        <textarea id="subject" name="subject" style="height:150px" required="required"></textarea>
+
+        <div  style="text-align:center;"><input type="submit" value="Submit"> </div>
+      </form>
+
+
+    </div>
+
+<!-- START HERE -->
+
+
+
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div id="thankyou_message">
+    <p id="Message">Thanks for contacting me!<br>
+      I will get back to you soon!</p>
   </div>
 
-  <div id="Form">
-    
-   <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzM4HAQtMIg4C9g8cS2iGpOINy1DlTuRSM1zvYdY4sScMb9dJ-H/exec">
-      <label for="name"> <font color="#565f6d"> Name: </font></label>
-      <input type="text" id="name" name="name" style="height:50px" required="required">
+  <div id="Media">
+   <a href="https://www.linkedin.com/in/caity-berry-432664139" target="_blank"> <div class="icons">
+      <img src='linkedin.jpg' style="width:150px;height:150px" onmouseover="this.src='linkedinColor.jpg';" onmouseout="this.src='linkedin.jpg';" />
+     </div></a>
+   <a href="https://www.facebook.com/caityritaberry" target="_blank"> <div class="icons">
+               <img src='facebook.jpg' style="width:150px;height:150px" onmouseover="this.src='facebookColor.jpg';" onmouseout="this.src='facebook.jpg';" />
+  </div> </a>
 
-      <label for="email"> <font color="#565f6d"> Your email: </font ></label>
-      <input type="text" id="email" name="email"  style="height:50px" required="required">
+     <a href="https://www.instagram.com/caityraspberry/?hl=en" target="_blank"> <div class="icons">
+                        <img src='Gram.jpg' style="width:150px;height:150px" onmouseover="this.src='gramColor.jpg';" onmouseout="this.src='Gram.jpg';" />
+  </div> </a>
 
-      <label for="subject"> <font color="#565f6d"> Your message: </font></label>
-      <textarea id="subject" name="subject" style="height:150px" required="required"></textarea>
+  <!--
+     <a href="https://www.strava.com/athletes/20467029" target="_blank"> <div class="icons">
+         <img src= "Strava.png" style="width:150px;height:150px"></div> </a> -->
+    </div>
 
-      <div  style="text-align:center;"><input type="submit" value="Submit"> </div>
-    </form>
-    
-    
-  </div>
-<div id="Media">
- <a href="https://www.linkedin.com/in/caity-berry-432664139" target="_blank"> <div class="icons">
-    <img src='linkedin.jpg' style="width:150px;height:150px" onmouseover="this.src='linkedinColor.jpg';" onmouseout="this.src='linkedin.jpg';" />
-   </div></a>
- <a href="https://www.facebook.com/caityritaberry" target="_blank"> <div class="icons">
-             <img src='facebook.jpg' style="width:150px;height:150px" onmouseover="this.src='facebookColor.jpg';" onmouseout="this.src='facebook.jpg';" />
-</div> </a>
-  
-   <a href="https://www.instagram.com/caityraspberry/?hl=en" target="_blank"> <div class="icons">
-                      <img src='Gram.jpg' style="width:150px;height:150px" onmouseover="this.src='gramColor.jpg';" onmouseout="this.src='Gram.jpg';" />
-</div> </a>
-  
-<!--  
-   <a href="https://www.strava.com/athletes/20467029" target="_blank"> <div class="icons">
-       <img src= "Strava.png" style="width:150px;height:150px"></div> </a> -->
-  </div>
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
 </body>
-  </html>
+</html>
