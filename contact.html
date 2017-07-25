@@ -18,6 +18,11 @@
       function normaltab (ID) {
         document.getElementById(ID).style.fontSize = "25px";
       }
+        function disappear () {
+
+        Intro.style.display = "none";
+
+      }
     </script>
     <style>
     #MainTitle {
@@ -159,7 +164,7 @@ input[type=submit]:hover {
    <p><a href="https://caityraspberry.github.io/portfolio/contact.html">Contact</a>
   </p>    </div>
     </div>
-    <div id="Intro"> <p class="message"> <font color="#565f6d"> If you would liked to contact me please fill out this form! After pressing the sumbit button it should take you to confirmation page within 15 seconds. If it does not, please press the submit button again. </font ></p>
+    <div id="Intro"> <p class="message"> <font color="#565f6d"> If you would like to contact me please fill out this form! After pressing the sumbit button it should take you to confirmation page within 15 seconds. If it does not, please press the submit button again. </font ></p>
     </div>
     <div id="Form">
 
@@ -175,7 +180,7 @@ input[type=submit]:hover {
         <label for="subject"> <font color="#565f6d"> Your message: </font></label>
         <textarea id="subject" name="subject" style="height:150px" required="required"></textarea>
 
-        <div  style="text-align:center;"><input type="submit" value="Submit"> </div>
+        <div  style="text-align:center;"><input type="submit" value="Submit" onclick="disappear();"> </div>
       </form>
 
 
