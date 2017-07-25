@@ -18,6 +18,10 @@
       function normaltab (ID) {
         document.getElementById(ID).style.fontSize = "25px";
       }
+        function hide() {
+    var div = document.getElementyById('Intro');
+    div.style.display = 'none';
+}
     </script>
     <style>
     #MainTitle {
@@ -168,7 +172,7 @@ input[type=submit]:hover {
         <label for="subject"> <font color="#565f6d"> Your message: </font></label>
         <textarea id="subject" name="subject" style="height:150px" required="required"></textarea>
 
-        <div  style="text-align:center;"><input type="submit" value="Submit"> </div>
+        <div  style="text-align:center;"><input type="submit" value="Submit" onclick=hide()> </div>
       </form>
 
 
